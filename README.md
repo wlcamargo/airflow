@@ -23,6 +23,14 @@ Execute o comando para baixar as imagens e rodar os containers
 sudo docker compose up -d
 ```
 
+## Warning
+Possivelmente vai dar um erro pela falta da Network. Para criar a network utilize o comando:
+```
+docker create network network-bigdata
+```
+
+Depois de criar, execute novamente o comando para rodar o container.
+
 ## Como acessar o Airflow?
 localhost:8081
 
